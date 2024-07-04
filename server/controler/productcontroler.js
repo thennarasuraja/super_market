@@ -45,7 +45,7 @@ export class ProductControler{
         const deletedata=req.body.product
         console.log(deletedata)
 
-       connection.query(`DELETE FROM products WHERE products.productId=${deletedata.productId}`,(err,result)=>{
+       connection.query(`DELETE FROM products WHERE products.productId=${deletedata}`,(err,result)=>{
         if(err){
             console.log("something error",err)
 
